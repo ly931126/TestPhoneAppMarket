@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TestPhoneAppMarket</string>
+    <string name="food_price">食物价格</string>
+    <string name="food_name">食物名字</string>
+    <string name="sea_food">海鲜</string>
+    <string name="fruit">水果</string>
+    <string name="gabbit">川菜</string>
+    <string name="vegetables_food">川菜</string>
+    <string name="sweet_thing">甜品</string>
+    <string name="soup">美容汤</string>
+
+    <array name="another_items">
+        <item>甜品1</item>
+        <item>甜品2</item>
+        <item>甜品3</item>
+        <item>甜品4</item>
+        <item>甜品5</item>
+        <item>甜品6</item>
+        <item>甜品7</item>
+        <item>甜品8</item>
+        <item>甜品9</item>
+        <item>甜品10</item>
+    </array>
+
+    <array name="soup_items">
+        <item>十全大补汤1</item>
+        <item>十全大补汤2</item>
+        <item>十全大补汤3</item>
+        <item>十全大补汤4</item>
+        <item>十全大补汤5</item>
+        <item>十全大补汤6</item>
+        <item>十全大补汤7</item>
+        <item>十全大补汤8</item>
+        <item>十全大补汤9</item>
+        <item>十全大补汤10</item>
+    </array>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jorge.circlelibrary.ImageCycleView
+            android:id="@+id/cycleView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageCycleView_height"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_bottom_tab"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/sea_food_tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/sea_food_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/sea_food"/>
+
+                <TextView
+                    android:id="@+id/sea_food_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sea_food_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/sea_food"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fruit_food_tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/fruit_food_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/fruit"/>
+
+                <TextView
+                    android:id="@+id/fruit_food_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fruit_food_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/fruit"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vegetables_food_tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/vegetables_food_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/vegetables"/>
+
+                <TextView
+                    android:id="@+id/veges_food_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vegetables_food_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/gabbit"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sweet_food_tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/sweet_food_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/sweet_icon"/>
+
+                <TextView
+                    android:id="@+id/sweet_food_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sweet_food_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/sweet_thing"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/soup_food_tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/soup_food_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/soup"/>
+
+                <TextView
+                    android:id="@+id/soup_food_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/soup_food_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/soup"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:layout_below="@+id/cycleView"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/ll_bottom_tab"
+            android:background="@color/gray"/>
+    </RelativeLayout>
+</FrameLayout>

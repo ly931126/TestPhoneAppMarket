@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/vegetables_one"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/vegetables_two"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/vegetables_three"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/vegetables_four"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/vegetables_five"
+        android:duration="1000"/>
+
+</animation-list>
