@@ -27,7 +27,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends FragmentActivity   {
+public class MainActivity extends FragmentActivity {
 	private static final String	TAG	= MainActivity.class.getSimpleName();
 	@BindView(R.id.cycleView)
 	ImageCycleView				mCycleView;
@@ -66,7 +66,7 @@ public class MainActivity extends FragmentActivity   {
 	
 	// 底部标签切换的Fragment
 	private Fragment			mSeaFoodFragment, mFruitFragment, mVegetablesFragment, mSweetFragment, mSoupFragment, currentFragment;
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -87,7 +87,6 @@ public class MainActivity extends FragmentActivity   {
 		urlList.add("http://pic.sc.chinaz.com/files/pic/pic9/201703/bpic685.jpg");
 		urlList.add(
 				"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491489054326&di=a0048b47c63a386e2820bc7ed2083000&imgtype=0&src=http%3A%2F%2Fimg01.taopic.com%2F141120%2F235109-1411200RZ118.jpg");
-		// urlList.add("http://kuoo8.com/wall_up/hsf2288/200801/2008012919460743597.jpg");
 		urlList.add(
 				"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491489112002&di=950d9f7d59bbb54161e8d53d1b9bc3f4&imgtype=0&src=http%3A%2F%2Fimg1.3lian.com%2F2015%2Fa1%2F1%2Fd%2F160.jpg");
 		urlList.add(
@@ -131,7 +130,6 @@ public class MainActivity extends FragmentActivity   {
 		mCycleView.startImageCycle();
 	}
 	
-
 	/**
 	 * 初始化底部标签
 	 */
@@ -147,18 +145,15 @@ public class MainActivity extends FragmentActivity   {
 			// 记录当前Fragment
 			currentFragment = mSeaFoodFragment;
 			// 设置图片文本的变化
-			// knowImg.setImageResource(R.drawable.btn_know_pre);
 			mSeaFoodKind.setTextColor(getResources().getColor(R.color.red));
-			// iWantKnowImg.setImageResource(R.drawable.btn_wantknow_nor);
 			mFruitFoodKind.setTextColor(getResources().getColor(R.color.blue));
-			// meImg.setImageResource(R.drawable.btn_my_nor);
 			mVegesFoodKind.setTextColor(getResources().getColor(R.color.blue));
 			mSweetFoodKind.setTextColor(getResources().getColor(R.color.blue));
 			mSoupFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		}
 		
 	}
-
+	
 	/**
 	 * 点击第一个tab
 	 */
@@ -169,11 +164,8 @@ public class MainActivity extends FragmentActivity   {
 		addOrShowFragment(getSupportFragmentManager().beginTransaction(), mSeaFoodFragment);
 		
 		// 设置底部tab变化
-		// knowImg.setImageResource(R.drawable.btn_know_pre);
 		mSeaFoodKind.setTextColor(getResources().getColor(R.color.red));
-		// iWantKnowImg.setImageResource(R.drawable.btn_wantknow_nor);
 		mFruitFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// meImg.setImageResource(R.drawable.btn_my_nor);
 		mVegesFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSweetFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSoupFoodKind.setTextColor(getResources().getColor(R.color.blue));
@@ -189,9 +181,7 @@ public class MainActivity extends FragmentActivity   {
 		addOrShowFragment(getSupportFragmentManager().beginTransaction(), mFruitFragment);
 		
 		mSeaFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// iWantKnowImg.setImageResource(R.drawable.btn_wantknow_nor);
 		mFruitFoodKind.setTextColor(getResources().getColor(R.color.red));
-		// meImg.setImageResource(R.drawable.btn_my_nor);
 		mVegesFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSweetFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSoupFoodKind.setTextColor(getResources().getColor(R.color.blue));
@@ -208,9 +198,7 @@ public class MainActivity extends FragmentActivity   {
 		
 		addOrShowFragment(getSupportFragmentManager().beginTransaction(), mVegetablesFragment);
 		mSeaFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// iWantKnowImg.setImageResource(R.drawable.btn_wantknow_nor);
 		mFruitFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// meImg.setImageResource(R.drawable.btn_my_nor);
 		mVegesFoodKind.setTextColor(getResources().getColor(R.color.red));
 		mSweetFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSoupFoodKind.setTextColor(getResources().getColor(R.color.blue));
@@ -218,28 +206,24 @@ public class MainActivity extends FragmentActivity   {
 	}
 	
 	private void clickTab4Layout() {
-		if(mSweetFragment==null){
-			mSweetFragment=new SweetFoodFeagment();
+		if (mSweetFragment == null) {
+			mSweetFragment = new SweetFoodFeagment();
 		}
 		addOrShowFragment(getSupportFragmentManager().beginTransaction(), mSweetFragment);
 		mSeaFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// iWantKnowImg.setImageResource(R.drawable.btn_wantknow_nor);
 		mFruitFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// meImg.setImageResource(R.drawable.btn_my_nor);
 		mVegesFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSweetFoodKind.setTextColor(getResources().getColor(R.color.red));
 		mSoupFoodKind.setTextColor(getResources().getColor(R.color.blue));
 	}
 	
 	private void clickTab5Layout() {
-		if(mSoupFragment==null){
-			mSoupFragment=new SoupFoodFeagment();
+		if (mSoupFragment == null) {
+			mSoupFragment = new SoupFoodFeagment();
 		}
 		addOrShowFragment(getSupportFragmentManager().beginTransaction(), mSoupFragment);
 		mSeaFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// iWantKnowImg.setImageResource(R.drawable.btn_wantknow_nor);
 		mFruitFoodKind.setTextColor(getResources().getColor(R.color.blue));
-		// meImg.setImageResource(R.drawable.btn_my_nor);
 		mVegesFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSweetFoodKind.setTextColor(getResources().getColor(R.color.blue));
 		mSoupFoodKind.setTextColor(getResources().getColor(R.color.red));

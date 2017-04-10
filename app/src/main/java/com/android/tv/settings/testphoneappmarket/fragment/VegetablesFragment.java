@@ -32,12 +32,12 @@ public class VegetablesFragment extends Fragment {
 		initView();
 		return mView;
 	}
-
+	
 	private void initView() {
-		//设置ImageView的背景为帧动画布局文件
+		// 设置ImageView的背景为帧动画布局文件
 		mVegetablesPicture.setBackgroundResource(R.drawable.frame_animator);
 		AnimationDrawable frameAnimation = (AnimationDrawable) mVegetablesPicture.getBackground();
-//开启帧动画
+		// 开启帧动画
 		frameAnimation.start();
 	}
 }

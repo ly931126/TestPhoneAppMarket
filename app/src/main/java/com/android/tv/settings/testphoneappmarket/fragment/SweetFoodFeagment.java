@@ -18,7 +18,7 @@ import android.view.ViewGroup;
  */
 
 public class SweetFoodFeagment extends Fragment  implements SweetRecyclerViewAdapter.onStartDragListener{
-    private static final String TAG=SeaFoodFragment.class.getSimpleName();
+    private static final String TAG=SweetFoodFeagment.class.getSimpleName();
     ItemTouchHelper mItemTouchHelper;
 
     public SweetFoodFeagment(){

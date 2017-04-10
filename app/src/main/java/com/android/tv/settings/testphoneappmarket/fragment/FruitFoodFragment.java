@@ -168,20 +168,6 @@ public class FruitFoodFragment extends Fragment {
 		}
 	};
 
-//	@Override
-//	public boolean onTouchEvent(MotionEvent event) {
-//		switch (event.getAction()) {
-//			case MotionEvent.ACTION_MOVE:
-//			case MotionEvent.ACTION_DOWN:
-//				showImageButtonView();
-//				break;
-//			case MotionEvent.ACTION_UP:
-//				hideImageButtonView();
-//				break;
-//		}
-//		return true;
-//	}
-
 	private void hideImageButtonView() {
 		new Thread() {
 			@Override
